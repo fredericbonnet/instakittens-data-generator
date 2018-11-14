@@ -1,0 +1,31 @@
+{
+  "name": "instakittens-data-generator",
+  "version": "0.0.1",
+  "description": "JSON database generator for the Instakittens project",
+  "main": "index.js",
+  "author": {
+    "name": "Frédéric Bonnet",
+    "email": "fredericbonnet@free.fr"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fredericbonnet/instakittens-data-generator.git"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js"
+  },
+  "dependencies": {
+    "faker": "^4.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "db.json",
+      "accounts.json"
+    ]
+  }
+}
